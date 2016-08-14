@@ -1,0 +1,63 @@
+{
+  "name": "post",
+  "plural": "posts",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ownerId":{
+      "type":"string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "number"
+    },
+    "feature_image": {
+      "type": "string",
+      "required": true
+    },
+    "liker": {
+      "type": [
+        "string"
+      ]
+    },
+    "comments": {
+      "type": [
+        "any"
+      ]
+    },
+    "views": {
+      "type": "number",
+      "required": true,
+      "default": "1"
+    },
+    "categoryId":{
+      "type":"string",
+      "required":true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "owner": {
+      "type": "belongsTo",
+      "model": "user",
+      "foreignKey": "ownerId"
+    },
+    "category": {
+      "type": "belongsTo",
+      "model": "category",
+      "foreignKey": "categoryId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

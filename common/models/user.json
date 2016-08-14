@@ -1,0 +1,47 @@
+{
+  "name": "user",
+  "plural": "people",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id":{
+      "type":"string",
+      "id":true
+    },
+    "full_name": {
+      "type": "string",
+      "required": true
+    },
+    "fid": {
+      "type": "number"
+    },
+    "post_actions": {
+      "type": [
+        "any"
+      ]
+    },
+    "followings": {
+      "type": [
+        "string"
+      ]
+    },
+    "followers": {
+      "type": [
+        "string"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {
+    "posts": {
+      "type": "hasMany",
+      "model": "post",
+      "foreignKey": "ownerId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
