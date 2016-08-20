@@ -15,6 +15,9 @@
       "type": [
         "string"
       ]
+    },
+    "parent":{
+      "type":"string"
     }
   },
   "validations": [],

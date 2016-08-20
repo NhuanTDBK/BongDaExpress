@@ -1,22 +1,32 @@
  
- //<!-- ========================= -->
         //////////////This Theme Design and Developed //////////////////////
         //////////// by www.wpfreeware.com======================-->
 
  jQuery(document).ready(function(){
-   // for search bar
-     $('#searchIcon').on("click", function () {
-      $(this).parents('.header_search').find("#shide").css('top','0px')
-      $(this).parents('.header_search').find("#shide").css('display','block')
-     
-});
-    $('.remove').on("click", function () {
-    $(this).parents('#shide').fadeOut();
-    $(this).parents('#shide').css('top','-80px')
-});    
+
+  // for hover dropdown menu
+    $('ul.nav li.dropdown').hover(function() {
+      $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
+    }, function() {
+      $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
+    });
+    // slick slider call 
+    $('.slick_slider').slick({
+      dots: true,
+      infinite: true,      
+      speed: 500,      
+      slidesToShow: 1,
+      slide: 'div',
+      autoplay: true,
+      autoplaySpeed: 2000,
+      cssEase: 'linear',
+      adaptiveHeight: false,
+      mobileFirst:true
+    });
+
    
   //Check to see if the window is top if not then display button
-  $(window).scroll(function(){
+  jQuery(window).scroll(function(){
     if ($(this).scrollTop() > 300) {
       $('.scrollToTop').fadeIn();
     } else {
@@ -30,9 +40,7 @@
     return false;
   });
 
-  $('.tootlip').tooltip(); 
-  $("ul#ticker01").liScroll(); 
-
+  
 });
 
  wow = new WOW(
@@ -48,41 +56,14 @@
     //   this.parentNode.insertBefore(section, this);
     // };
 
-  <!-- Preloader -->
+  // <!-- Preloader -->
 
   //<![CDATA[
     jQuery(window).load(function() { // makes sure the whole site is loaded
       $('#status').fadeOut(); // will first fade out the loading animation
-      $('#preloader').delay(700).fadeOut('slow'); // will fade out the white DIV that covers the website.
-      $('body').delay(700).css({'overflow':'visible'});
+      $('#preloader').delay(100).fadeOut('slow'); // will fade out the white DIV that covers the website.
+      $('body').delay(100).css({'overflow':'visible'});
     })
   //]]>
 
-  // slick slider call
-  $(document).ready(function(){  
-  $('.owl-carousel').slick({
-  centerMode: true,
-  centerPadding: '0px',
-  slidesToShow: 3,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: true,
-        centerMode: true,
-        centerPadding: '0px',
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: true,
-        centerMode: true,
-        centerPadding: '0px',
-        slidesToShow: 1
-      }
-    }
-  ]
-});
-});
+  

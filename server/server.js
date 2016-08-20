@@ -1,7 +1,18 @@
 var loopback = require('loopback');
 var boot = require('loopback-boot');
-
+var path = require('path');
+var hbs = require('hbs');
+// Loading all partials view
+hbs.registerPartials(__dirname + '/views/partials');
 var app = module.exports = loopback();
+app.set('view engine', 'hbs'); // LoopBack comes with EJS out-of-box
+app.set('json spaces', 2); // format json responses for easier viewing
+// app.engine('hbs',);
+// must be set to serve views properly when starting the app via `slc run` from
+// the project root
+app.set('views', path.resolve(__dirname, 'views'));
+// Enable view caching
+// app.enable('view cache');
 
 app.start = function() {
   // start the web server

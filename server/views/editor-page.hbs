@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>medium editor | demo</title>
+    <link rel="stylesheet" href="../css/demo.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css">
+    <link rel="stylesheet" href="../dist/css/medium-editor.css">
+    <link rel="stylesheet" href="../dist/css/themes/beagle.css" id="medium-editor-theme">
+    <!--<link rel="stylesheet" href="../dist/css/medium-editor.min.css">-->
+    <!--<link rel="stylesheet" href="../dist/css/themes/default.css">-->
+    <link rel="stylesheet" href="../dist/css/medium-editor-insert-plugin.min.css">
+        <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- for fontawesome icon css file -->
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <!-- for content animate css file -->
+    <link rel="stylesheet" href="../css/animate.css">
+    <!-- google fonts  -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'> 
+        <!-- slick slider css file -->
+    <link href="../css/slick.css" rel="stylesheet">     
+    <!-- <link href="css/theme-red.css" rel="stylesheet"> -->    
+    <link href="../css/theme.css" rel="stylesheet">
+    <!-- main site css file -->    
+    <link href="../style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!--<script src="bower_components/jquery/../dist/jquery.min.js"></script>-->
+    <!--<script src="bower_components/medium-editor/../dist/js/medium-editor.js"></script>-->
+    <script src="../dist/js/handlebars.runtime.min.js"></script>
+    <script src="../dist/js/jquery-sortable-min.js"></script>
+    <script src="../dist/js/jquery.ui.widget.js"></script>
+    <script src="../dist/js/jquery.iframe-transport.js"></script>
+    <script src="../dist/js/jquery.fileupload.js"></script>
+    <script src="../dist/js/medium-editor.js"></script>
+    <script src="../dist/js/medium-editor-insert-plugin.min.js"></script>
+        
+</head>
+<body>
+    <div id="container">
+      <header id="header">
+            <div class="row">
+                <div>
+                <!-- start header top -->
+                
+                <!-- start header bottom -->
+                <div class="header_bottom">
+                    <div class="header_bottom_left metabar-inner u-marginAuto u-maxWidth1000 u-paddingLeft20 u-paddingRight20 js-metabarMiddle is-hideWhenMinimized">
+                    <!-- for img logo -->			
+                    <!-- <a class="logo" href="index.html">
+                    <img src="img/logo.jpg" alt="logo">
+                    </a>-->
+                    <!-- for text logo -->
+                    <div class="col-md-6 metabar-block metabar-block--left u-floatLeft u-height65 u-xs-height56">
+                        <a class="logo" href="index.html">
+                        BongDa<strong>Express</strong> <span>A Pro Football Magazine</span>
+                        </a> 
+                    </div>
+                    <div class="pull-right col-md-6">
+                        <div class="buttonSet">
+                        <a href="editor-page.html" class="label-paddingTop3 button button--primary button--chromeless u-accentColor--buttonNormal is-inSiteNavBar u-sm-hide u-marginRight15 u-lineHeight30 u-height32">
+                            Publish
+                        </a>
+                        <button id="profileBtn" class=" button button--chromeless u-baseColor--buttonNormal is-inSiteNavBar js-userActions">
+                            <div class="avatar dropdown">
+                            <img src="https://cdn-images-1.medium.com/fit/c/32/32/0*zSAJKpvCMj9MwSNs." 
+                                    class="avatar-image avatar-image--icon" />
+                            <!--<a href="#" class="" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="archive1.html">Archive page</a></li>
+                                <li><a href="archive1.html">Archive page</a></li>
+                                <li><a href="archive1.html">Archive page</a></li>
+                                <li><a href="archive1.html">Archive page</a></li>                
+                            </ul>                     -->
+                            <!--</div>-->
+                            </div>
+                        </button>
+                        </div>
+                        <!--Dropdown notification-->
+                        <div>
+                        
+                        </div>
+                        <!--Dropdown profile-->
+                        <div>
+                        </div>
+                    </div>
+                    </div>
+                </div><!-- End header bottom -->
+                </div>
+            </div>
+            </header><!-- End header area -->
+         <div class="row">
+            <div class="featureImage container u-maxWidth col-md-12">
+                <div class="featureDiv">
+                    <div class="featureInline" id="featureInline">
+                        <i></i>
+                        <img id="featurePreview"  />
+                        <span id="spanHolder">Drag or click to add a feature photo</span>
+                        <input id="featureUpload" type="file" style="display:none" onchange="previewFile()" style="width:100%;height:auto"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <header class="container u-maxWidth740">
+            <div class="postMetaHeader u-paddingBottom10 row col-md-12 col-lg-12">
+                <div class="col u-size12of12 js-postMetaLockup">
+                <div class="postMetaLockup postMetaLockup--authorWithBio u-flex js-postMetaLockup">
+                    <div class="u-flex0">
+                    <a class="link avatar u-baseColor--link" href="">
+                        <img class="avatar-image avatar-image--smaller" src="https://cdn-images-1.medium.com/fit/c/40/40/0*zSAJKpvCMj9MwSNs."/>
+                    </a>
+                    </div>
+                    <div class="u-flex1 u-paddingLeft15 u-overflowHidden">
+                    <a class="link link link--darken link--darker u-baseColor--link">Nhuan</a>
+                    <div class="postMetaInline">Draft</div>
+                    </div>
+                </div>
+                
+                </div>
+                <div class='section-inner u-maxWidth740 container paddingRight60'>
+                <h3 class="graf--h3 graf--leading graf--title is-selected">
+                    <span class="defaultValue">                    
+                        <input class="titleBold" placeholder="Title"/>
+                    </span>
+                </h3>
+            </div>
+            </div>
+            </header>
+            <div class='section-content col-md-12 col-lg-12 u-paddinleft100'>
+                <div class="editable container u-maxWidth740 u-paddingTop10">
+                    <p ></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var editor = new MediumEditor('.editable', {
+            buttonLabels: 'fontawesome',
+            placeholder: {
+                /* This example includes the default options for placeholder,
+                   if nothing is passed this is what it used */
+                text: 'Tell a story',
+                hideOnClick: false
+            }
+        });
+        $(function () {
+            $('.editable').mediumInsert({
+                editor: editor
+            });
+        });
+        document.getElementById("featureInline").onclick = function(){
+            $("#featureUpload")[0].click();
+        };
+        function previewFile() {
+            var preview = document.getElementById('featurePreview');
+            $("#spanHolder").hide()
+            // var spanHolder = document.getElementById('spanHolder');
+            var file    = document.querySelector('input[type=file]').files[0];
+            var reader  = new FileReader();
+
+            reader.addEventListener("load", function () {
+                preview.src = reader.result;
+            }, false);
+
+            if (file) {
+                reader.readAsDataURL(file);
+            }
+        }
+
+    </script>
+</body>
+</html>

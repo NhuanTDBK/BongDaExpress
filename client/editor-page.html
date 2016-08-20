@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>medium editor | demo</title>
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css">
+    <link rel="stylesheet" href="dist/css/medium-editor.css">
+    <link rel="stylesheet" href="dist/css/themes/beagle.css" id="medium-editor-theme">
+    <link rel="stylesheet" href="dist/css/medium-editor.min.css">
+    <link rel="stylesheet" href="dist/css/themes/default.css">
+    <link rel="stylesheet" href="dist/css/medium-editor-insert-plugin.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!--<script src="bower_components/jquery/dist/jquery.min.js"></script>-->
+    <!--<script src="bower_components/medium-editor/dist/js/medium-editor.js"></script>-->
+    <script src="dist/js/handlebars.runtime.min.js"></script>
+    <script src="dist/js/jquery-sortable-min.js"></script>
+    <script src="dist/js/jquery.ui.widget.js"></script>
+    <script src="dist/js/jquery.iframe-transport.js"></script>
+    <script src="dist/js/jquery.fileupload.js"></script>
+    <script src="dist/js/medium-editor.js"></script>
+    <script src="dist/js/medium-editor-insert-plugin.min.js"></script>
+    
+</head>
+<body>
+    <div id="container">
+        <div class="featureImage container u-">
+          <div class="featureDiv">
+            <div class="featureInline">
+              <i></i>
+              Drag or click to add a feature photo
+            </div>
+          </div>
+        </div>
+        <header class="container u-maxWidth740">
+          <div class="postMetaHeader u-paddingBottom10 row">
+            <div class="col u-size12of12 js-postMetaLockup">
+              <div class="postMetaLockup postMetaLockup--authorWithBio u-flex js-postMetaLockup">
+                <div class="u-flex0">
+                  <a class="link avatar u-baseColor--link" href="">
+                    <img class="avatar-image avatar-image--smaller" src="https://cdn-images-1.medium.com/fit/c/40/40/0*zSAJKpvCMj9MwSNs."/>
+                  </a>
+                </div>
+                <div class="u-flex1 u-paddingLeft15 u-overflowHidden">
+                  <a class="link link link--darken link--darker u-baseColor--link">Nhuan</a>
+                  <div class="postMetaInline">Draft</div>
+                </div>
+              </div>
+              
+            </div>
+            <div class='section-inner u-maxWidth740 container paddingRight60'>
+              <h3 class="graf--h3 graf--leading graf--title is-selected">
+                <span class="defaultValue">Title</span>
+             </h3>
+          </div>
+          </div>
+        </header>
+        <div class='section-content'>
+
+          <div class="editable container u-maxWidth740 u-paddingTop10">
+            <p ></p>
+          </div>
+        </div>
+    </div>
+
+    <script>
+        var editor = new MediumEditor('.editable', {
+            buttonLabels: 'fontawesome',
+            placeholder: {
+                /* This example includes the default options for placeholder,
+                   if nothing is passed this is what it used */
+                text: 'Tell a story',
+                hideOnClick: false
+            }
+        });
+        $(function () {
+            $('.editable').mediumInsert({
+                editor: editor
+            });
+        });
+    </script>
+</body>
+</html>

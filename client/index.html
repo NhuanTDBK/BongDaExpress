@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SybarMagazine</title>
-
+    <title>BongDaExpress</title>
+    
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- for fontawesome icon css file -->
@@ -13,21 +13,17 @@
     <!-- for content animate css file -->
     <link rel="stylesheet" href="css/animate.css">
     <!-- google fonts  -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Metal+Mania' rel='stylesheet' type='text/css'> 
-    <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
-    <!-- for news ticker css file -->
-     <link href="css/li-scroller.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'> 
      <!-- slick slider css file -->
-    <link href="css/slick.css" rel="stylesheet">
-    <!-- website theme file -->
-    <!-- <link href="css/theme-red.css" rel="stylesheet"> -->
-     <!-- <link href="css/theme-yellow.css" rel="stylesheet"> -->
-     <link href="css/theme.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">     
+    <!-- <link href="css/theme-red.css" rel="stylesheet"> -->  
+      <link href="css/theme.css" rel="stylesheet">	 
     <!-- main site css file -->    
     <link href="style.css" rel="stylesheet">
- 
-
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -48,952 +44,700 @@
    
   <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
   
-  <div class="container">
-    <div class="box_wrapper">
-      <!-- ==================start header=============== -->
-      <header id="header">     
-        <!-- start header top area -->
-        <div class="header_top">
-            <!-- Static navbar -->
-          <nav class="navbar navbar-default" role="navigation">
-            <div class="container-fluid">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>              
-              </div>
-              <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav custom_nav">
-                  <li class=""><a href="index.html">Home</a></li>          
-                  <li><a href="#">Shortcodes</a></li>
-                  <li><a href="category-archive.html">Archive</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="404.html">404 Page</a></li>
-                </ul>           
-              </div><!--/.nav-collapse -->
-            </div><!--/.container-fluid -->
-          </nav>
-         <div class="header_search">
-          <button id="searchIcon"><i class="fa fa-search"></i></button>
-           <!-- <a id="searchIcon" href="#"><i class="fa fa-search"></i></a> -->
-          <div id="shide">
-            <div id="search-hide">
-              <form>
-              <input type="text" size="40" placeholder="Search here ...">
-              </form>
-              <button class="remove"><span><i class="fa fa-times"></i></span></button>
-            </div>
-          </div>
-         </div>
-        </div>
-        <!-- End header top area -->
-
-        <!-- start header bottom area -->
-        <div class="header_bottom">
-          <div class="logo_area">
-          <!-- for your image logo -->
-          <!-- <a class="logo" href="index.html">
-           <img src="img/logo.jpg" alt="logo">
-          </a> -->
-
-          <!-- for your text logo -->
-            <a class="logo" href="#">
-            <b>S</b>ybar Magazine
-            <span>A Pro Magazine Theme</span>
-            </a>
-          </div>
-          <div class="top_addarea">
-            <a href="#"><img src="img/addbanner_728x90_V1.jpg" alt="img"></a>
-          </div>
-        </div>
-        <!-- start header top area -->     
-      </header>    
-      <!-- ==================End header=============== -->
-      <!-- start news sticker -->
-      <div class="latest_newsarea">      
-        <span>Latest News</span>
-        <ul id="ticker01" class="news_sticker">
-          <li><a href="#">My First News Item</a></li> 
-          <li><a href="#">My Second News Item</a></li>
-          <li><a href="#">My Third News Item</a></li>
-          <li><a href="#">My Four News Item</a></li> 
-          <li><a href="#">My Five News Item</a></li>
-          <li><a href="#">My Six News Item</a></li>
-          <li><a href="#">My Seven News Item</a></li> 
-          <li><a href="#">My Eight News Item</a></li>
-          <li><a href="#">My Nine News Item</a></li>          
-        </ul>    
-      </div>
-    <!-- End news sticker -->
-
-    <!-- ==================start top thumbnail slidier =============== -->
-    <div class="thumbnail_slider_area">
-      <!-- Set up your HTML -->
-      <div class="owl-carousel">
-        <div class="signle_iteam">
-          <img src="http://lorempixel.com/395/396/" alt="img">
-          <div class="sing_commentbox slider_comntbox">
-            <p><i class="fa fa-calendar"></i>19 Nov 2014</p>
-            <a href="#"><i class="fa fa-comments"></i>20 Comments</a>
-          </div>
-          <a class="slider_tittle" href="#">Fusce eu nulla semper porttitor felis sit amet</a>
-        </div>
-        <div class="signle_iteam">
-          <img src="http://lorempixel.com/395/396/" alt="img">
-          <div class="sing_commentbox slider_comntbox">
-            <p><i class="fa fa-calendar"></i>19 Nov 2014</p>
-            <a href="#"><i class="fa fa-comments"></i>20 Comments</a>
-          </div>
-          <a class="slider_tittle" href="#">Fusce eu nulla semper porttitor felis sit amet</a>
-        </div>
-        <div class="signle_iteam">
-          <img src="http://lorempixel.com/395/396/" alt="img">
-          <div class="sing_commentbox slider_comntbox">
-            <p><i class="fa fa-calendar"></i>19 Nov 2014</p>
-            <a href="#"><i class="fa fa-comments"></i>20 Comments</a>
-          </div>
-          <a class="slider_tittle" href="#">Fusce eu nulla semper porttitor felis sit amet</a>
-        </div>
-        <div class="signle_iteam">
-          <img src="http://lorempixel.com/395/396/" alt="img">
-          <div class="sing_commentbox slider_comntbox">
-            <p><i class="fa fa-calendar"></i>19 Nov 2014</p>
-            <a href="#"><i class="fa fa-comments"></i>20 Comments</a>
-          </div>
-          <a class="slider_tittle" href="#">Fusce eu nulla semper porttitor felis sit amet</a>
-        </div>
-        <div class="signle_iteam">
-          <img src="http://lorempixel.com/395/396/" alt="img">
-          <div class="sing_commentbox slider_comntbox">
-            <p><i class="fa fa-calendar"></i>19 Nov 2014</p>
-            <a href="#"><i class="fa fa-comments"></i>20 Comments</a>
-          </div>
-          <a class="slider_tittle" href="#">Fusce eu nulla semper porttitor felis sit amet</a>
-        </div>
-        <div class="signle_iteam">
-          <img src="http://lorempixel.com/395/396/" alt="img">
-          <div class="sing_commentbox slider_comntbox">
-            <p><i class="fa fa-calendar"></i>19 Nov 2014</p>
-            <a href="#"><i class="fa fa-comments"></i>20 Comments</a>
-          </div>
-          <a class="slider_tittle" href="#">Fusce eu nulla semper porttitor felis sit amet</a>
-        </div>
-      </div>
-    </div>
-    <!-- ==================End top thumbnail slidier =============== -->
-
-    <!-- =========================
-        //////////////This Theme Design and Developed //////////////////////
-        //////////// by www.wpfreeware.com======================-->
-
-    <!-- ==================start content body section=============== -->
-    <section id="contentbody">
+  <div class="container" data-role="page">
+    <!-- start header area -->
+    <header id="header">
       <div class="row">
-      <!-- start left bar content -->
-        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
-          <div class="row">
-            <div class="left_bar">
-            <!-- start single leftbar -->
-              <div class="single_leftbar">
-                <h2><span>Recent Post</span></h2>
-                <div class="singleleft_inner">
-                  <ul class="recentpost_nav wow fadeInDown">
-                    <li>
-                      <a href="single_page.html"><img src="http://lorempixel.com/150/80/" alt="img"></a>
-                      <a class="recent_title" href="single_page.html"> Curabitur ac dictum nisl eu hendrerit ante</a>
-                      </li>
-                      <li>
-                      <a href="single_page.html"><img src="http://lorempixel.com/150/80/" alt="img"></a>
-                      <a class="recent_title" href="single_page.html"> Curabitur ac dictum nisl eu hendrerit ante</a>
-                      </li>
-                      <li>
-                      <a href="single_page.html"><img src="http://lorempixel.com/150/80/" alt="img"></a>
-                      <a class="recent_title" href="single_page.html"> Curabitur ac dictum nisl eu hendrerit ante</a>
-                      </li>
-                  </ul>
-                </div>
+        <div class="">
+          <!-- start header top -->
+         
+          <!-- start header bottom -->
+          <div class="header_bottom">
+            <div class="header_bottom_left metabar-inner u-marginAuto u-maxWidth1000 u-paddingLeft20 u-paddingRight20 js-metabarMiddle is-hideWhenMinimized">
+            <!-- for img logo -->			
+            <!-- <a class="logo" href="index.html">
+              <img src="img/logo.jpg" alt="logo">
+             </a>-->
+             <!-- for text logo -->
+              <div class="col-md-6 metabar-block metabar-block--left u-floatLeft u-height65 u-xs-height56">
+                <a class="logo" href="index.html">
+                  BongDa<strong>Express</strong> <span>A Pro Football Magazine</span>
+                </a> 
               </div>
-              <!-- start single leftbar -->
-              <div class="single_leftbar wow fadeInDown">
-                <h2><span>Side Add</span></h2>
-                <div class="singleleft_inner">
-                  <a href="#"><img src="http://lorempixel.com/150/600/" alt="img"></a>
+              <div class="pull-right col-md-6">
+                <div class="buttonSet">
+                  <a href="editor-page.html" class="label-paddingTop3 button button--primary button--chromeless u-accentColor--buttonNormal is-inSiteNavBar u-sm-hide u-marginRight15 u-lineHeight30 u-height32">
+                    Write a article
+                  </a>
+                  
+                  <label class="label-paddingTop3 inputGroup  u-sm-hide metabar-predictiveSearch u-baseColor--placeholderNormal u-lineHeight30 u-height32 u-verticalAlignMiddle">
+                    <span>
+                      <i id="searchButton" class="fa fa-search" aria-hidden="true"></i>
+                    </span>
+                    <input id="inputQuery" placeholder="Type to search" class="js-predictiveSearchInput textInput textInput--rounded textInput--darkText u-baseColor--textNormal textInput--transparent u-lineHeight30 u-height32 u-verticalAlignMiddle"/>
+                  </label>
+                  <button class="button button--small button--circle button--chromeless is-touchIconBlackPulse is-inSiteNavBar u-baseColor--buttonNormal button--withIcon button--withSvgIcon button--activity js-notificationsButton">
+                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+                  </button>
+                  <button id="profileBtn" class=" button button--chromeless u-baseColor--buttonNormal is-inSiteNavBar js-userActions">
+                    <div class="avatar dropdown">
+                      <img src="https://cdn-images-1.medium.com/fit/c/32/32/0*zSAJKpvCMj9MwSNs." 
+                            class="avatar-image avatar-image--icon" />
+                      <!--<a href="#" class="" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown</a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="archive1.html">Archive page</a></li>
+                        <li><a href="archive1.html">Archive page</a></li>
+                        <li><a href="archive1.html">Archive page</a></li>
+                        <li><a href="archive1.html">Archive page</a></li>                
+                      </ul>                     -->
+                      <!--</div>-->
+                    </div>
+                  </button>
+                </div>
+                <!--Dropdown notification-->
+                <div>
+                
+                </div>
+                <!--Dropdown profile-->
+                <div>
                 </div>
               </div>
             </div>
+          </div><!-- End header bottom -->
+        </div>
+      </div>
+    </header><!-- End header area -->
+     <!-- Static navbar -->
+      <div id="navarea" data-role="header" data-position="fixed">
+        <nav class="navbar navbar-default"  role="navigation" style="background-color:#fff!important">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>             
+            </div>
+			
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav custom_nav u-borderTopLightest">
+                <li class=""><a href="index.html"><li class=""><a href="index.html"><i class="fa fa-home fa-lg" aria-hidden="true"></i></a></li> </a></li>              
+                 <li class="dropdown">
+                  <a href="#" class="" data-toggle="dropdown" role="button" aria-expanded="false">Ngoại hạng Anh</a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="archive1.html">Archive page</a></li>
+                    <li><a href="archive1.html">Archive page</a></li>
+                    <li><a href="archive1.html">Archive page</a></li>
+                    <li><a href="archive1.html">Archive page</a></li>                
+                  </ul>
+                </li>            
+                <li><a href="single.html">La Liga</a></li>
+                <li><a href="archive1.html">Bundesliga</a></li>
+                <li><a href="archive1.html">Việt Nam</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li style="float:right" data-toggle="modal" data-target="#login-modal"> 
+                  <button hidden></button>
+                  <a href="" onclick="event.preventDefault();">Login</a>
+                 </li>
+              </ul>           
+            </div><!--/.nav-collapse -->
+			
+          </div><!--/.container-fluid -->
+        </nav>
+      </div>
+      <!--Login form-->
+      <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header login_modal_header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h2 class="modal-title" id="myModalLabel">Login to Your Account</h2>
+              </div>
+              <div class="modal-body login-modal">
+                <p>BongDaExpress is the football social network for professional and enthusiast.
+                   It's 100% free, no registration required</p>
+                <br/>
+                <div class="clearfix"></div>
+                <div id='social-icons-conatainer'>
+                  <div class='modal-body-left'>
+                    <div class="form-group">
+                          <input type="text" id="username" placeholder="Enter your name" value="" class="form-control login-field">
+                          <i class="fa fa-user login-field-icon"></i>
+                      </div>
+
+                      <div class="form-group">
+                          <input type="password" id="login-pass" placeholder="Password" value="" class="form-control login-field">
+                          <i class="fa fa-lock login-field-icon"></i>
+                      </div>
+
+                      <a href="#" class="btn btn-success modal-login-btn">Login</a>
+                      <a href="#" class="login-link text-center">Lost your password?</a>
+                  </div>
+
+                  <div class='modal-body-right'>
+                    <div class="modal-social-icons">
+                      <a href='#' class="btn btn-default facebook"> <i class="fa fa-facebook modal-icons"></i> Sign In with Facebook </a>
+                      <a href='#' class="btn btn-default twitter"> <i class="fa fa-twitter modal-icons"></i> Sign In with Twitter </a>
+                      <a href='#' class="btn btn-default google"> <i class="fa fa-google-plus modal-icons"></i> Sign In with Google </a>
+                      <a href='#' class="btn btn-default linkedin"> <i class="fa fa-linkedin modal-icons"></i> Sign In with Linkedin </a>
+                    </div> 
+                  </div>	
+                  <div id='center-line'> OR </div>
+                </div>																												
+                <div class="clearfix"></div>
+
+                <div class="form-group modal-register-btn">
+                  <button class="btn btn-default"> New User Please Register</button>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="modal-footer login_modal_footer">
+              </div>
           </div>
         </div>
-        <!-- End left bar content -->
-
-        <!-- start left middlebar content -->
-        <div class="col-lg-7 col-md-7 col-sm-8 col-xs-12">
+      </div>
+      <!-- start site main content -->
+      <section id="mainContent">
+        <!-- start main content top -->
+        <div class="content_top">
           <div class="row">
-            <div class="middle_bar">
-            <!-- start featured slider -->
-              <div class="featured_sliderarea">
-                <!-- Carousel
-                ================================================== -->
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                  <!-- Indicators -->
-                  <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                    <li data-target="#myCarousel" data-slide-to="3"></li>
-                  </ol>
-                  <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                      <img src="http://lorempixel.com/668/328/" alt="First slide">          
-                      <div class="carousel-caption">
-                        <h1><a href="#"> Aliquam malesuada diam eget turpis varius 1</a></h1>           
-                      </div>          
-                    </div>
-                    <div class="item">
-                      <img src="http://lorempixel.com/668/328/" alt="First slide">          
-                      <div class="carousel-caption">
-                         <h1><a href="#"> Aliquam malesuada diam eget turpis varius 2</a></h1>              
-                      </div>          
-                    </div>
-                    <div class="item">
-                      <img src="http://lorempixel.com/668/328/" alt="First slide">          
-                      <div class="carousel-caption">
-                         <h1><a href="#"> Aliquam malesuada diam eget turpis varius 3</a></h1>             
-                      </div>          
-                    </div>
-                   <div class="item">
-                      <img src="http://lorempixel.com/668/328/" alt="First slide">          
-                      <div class="carousel-caption">
-                         <h1><a href="#"> Aliquam malesuada diam eget turpis varius 4</a></h1>             
-                      </div>          
-                    </div>
-                   
+            <!--Latest slider component-->
+             <!-- start content top latest slider -->
+            <div class="col-lg-6 col-md-6 col-sm6">             
+              <div class="latest_slider">
+                 <!-- Set up your HTML -->
+                <div class="slick_slider">
+                  <div class="single_iteam">
+                    <img src="https://i.guim.co.uk/img/media/fc277c9649c2669064c25594e9c1bf054e3023a7/0_3_620_372/master/620.jpg?w=620&q=55&auto=format&usm=12&fit=max&s=948395154911388e00d9d7da365e0572" alt="img">
+                    <h2><a class="slider_tittle" href="single.html">Premier League: 10 things to look out for this weekend</a></h2>
                   </div>
-                  <a class="left left_slide" href="#myCarousel" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>                     
-                  </a>
-                  <a class="right right_slide" href="#myCarousel" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>                     
-                  </a>
-                </div><!-- /.carousel -->
-              </div><!-- End featured slider -->
-
-              <!-- start category one -->
-              <div class="single_category wow fadeInDown">
-                <div class="category_title">
-                  <a href="category-archive.html">Category 1</a>
+                  <div class="single_iteam">
+                    <img src="https://i.guim.co.uk/img/media/706d732eaac525a7376bf49fbe6bc066eafc755a/0_52_3323_1995/master/3323.jpg?w=620&q=55&auto=format&usm=12&fit=max&s=a164ae52f297d3661d508e929e3d662c" alt="img">
+                    <h2><a class="slider_tittle" href="single.html">Football transfer rumours: Arsenal to sign José Giménez?</a></h2>
+                  </div>
+                  <div class="single_iteam">
+                    <img src="https://i.guim.co.uk/img/media/d507a03099b05e0ffd12c38d2f58ece1a5c972f4/0_57_4894_2937/master/4894.jpg?w=620&q=55&auto=format&usm=12&fit=max&s=012b7a739a65d91092157359788705e6" alt="img">
+                     <h2>
+                       <a class="slider_tittle" href="single.html">
+                        Danny Drinkwater ready to follow Vardy and Mahrez by signing Leicester deal</a></h2>
+                  </div>
+                  <div class="single_iteam">
+                    <img src="https://i.guim.co.uk/img/media/b21182b0c8433a0ab6c892de2a2fb6d2d8f3cadd/0_183_2791_1675/master/2791.jpg?w=620&q=55&auto=format&usm=12&fit=max&s=7f05c4e4c964f7cc5ba02c44bee96f3c" alt="img">
+                     <h2><a class="slider_tittle" href="single.html">Watford complete £10.4m deal for Juventus midfielder Roberto Pereyra</a></h2>
+                  </div>
                 </div>
-                <div class="single_category_inner">
-                  <ul class="catg_nav">
-                    <li>
-                      <div class="catgimg_container">
-                        <a class="catg1_img" href="single_page.html">
-                          <img src="http://lorempixel.com/310/150/" alt="img">
-                          </a>
-                      </div>
-                      <a class="catg_title" href="single_page.html"> Curabitur ac dictum nisl eu hendrerit ante</a>
-                      <div class="sing_commentbox">
-                        <p><i class="fa fa-calendar"></i>19 Nov 2014</p>
-                        <a href="#"><i class="fa fa-comments"></i>20 Comments</a>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="catgimg_container">
-                        <a class="catg1_img" href="single_page.html">
-                          <img src="http://lorempixel.com/310/150/" alt="img">
-                        </a>
-                      </div>
-                      <a class="catg_title" href="single_page.html">Fusce eu nulla semper porttitor felis sit amet</a>
-                      <div class="sing_commentbox">
-                        <p><i class="fa fa-calendar"></i>19 Nov 2014</p>
-                        <a href="#"><i class="fa fa-comments"></i>20 Comments</a>
-                      </div>
-                    </li>
-                     <li>
-                      <div class="catgimg_container">
-                        <a class="catg1_img" href="single_page.html">
-                          <img src="http://lorempixel.com/310/150/" alt="img">
-                        </a>
-                      </div>
-                      <a class="catg_title" href="single_page.html"> Curabitur ac dictum nisl eu hendrerit ante</a>
-                      <div class="sing_commentbox">
-                        <p><i class="fa fa-calendar"></i>19 Nov 2014</p>
-                        <a href="single_page.html"><i class="fa fa-comments"></i>20 Comments</a>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="catgimg_container">
-                        <a class="catg1_img" href="#">
-                          <img src="http://lorempixel.com/310/150/" alt="img">
-                        </a>
-                      </div>
-                      <a class="catg_title" href="#">Fusce eu nulla semper porttitor felis sit amet</a>
-                      <div class="sing_commentbox">
-                        <p><i class="fa fa-calendar"></i>19 Nov 2014</p>
-                        <a href="#"><i class="fa fa-comments"></i>20 Comments</a>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div> <!-- End category one -->  
-
-              <!-- start category Two -->
-              <div class="single_category  wow fadeInDown">
-                <div class="category_title">
-                  <a href="category-archive.html">Category 2</a>
-                </div>
-                <div class="single_category_inner">
-                  <ul class="catg_nav catg_nav2">
-                    <li>
-                      <div class="catgimg_container">
-                        <a class="catg1_img" href="#">
-                          <img src="http://lorempixel.com/310/300/" alt="img">
-                          </a>
-                      </div>
-                      <a class="catg_title" href="#"> Curabitur ac dictum nisl eu hendrerit ante</a>
-                      <div class="sing_commentbox">
-                        <p><i class="fa fa-calendar"></i>19 Nov 2014</p>
-                        <a href="#"><i class="fa fa-comments"></i>20 Comments</a>
-                      </div>
-                       <p class="post-summary">Suspendisse mauris dui, interdum vitae vehicula ut, posuere sed lectus. Nulla facilisi. Curabitur...</p>
-                    </li>
-                    <li>
-                      <div class="catgimg_container">
-                        <a class="catg1_img" href="#">
-                          <img src="http://lorempixel.com/310/300/" alt="img">
-                        </a>
-                      </div>
-                      <a class="catg_title" href="#">Fusce eu nulla semper porttitor felis sit amet</a>
-                      <div class="sing_commentbox">
-                        <p><i class="fa fa-calendar"></i>19 Nov 2014</p>
-                        <a href="#"><i class="fa fa-comments"></i>20 Comments</a>
-                      </div>
-                      <p class="post-summary">Suspendisse mauris dui, interdum vitae vehicula ut, posuere sed lectus. Nulla facilisi. Curabitur...</p>
-                    </li>                    
-                  </ul>
-                </div>
-              </div> <!-- End category Two --> 
-
-              <div class="category_three_fourarea  wow fadeInDown">
-                <div class="category_three">
-                      <!-- start category Three -->
-                  <div class="single_category">
-                    <div class="category_title">
-                      <a href="single_page.html">Category 3</a>
-                    </div>
-                    <div class="single_category_inner">
-                      <ul class="catg_nav catg_nav3">
-                        <li>
-                          <div class="catgimg_container">
-                            <a class="catg1_img" href="single_page.html">
-                              <img src="http://lorempixel.com/292/150/" alt="img">
-                              </a>
-                          </div>
-                          <a class="catg_title" href="#"> Curabitur ac dictum nisl eu hendrerit ante</a>
-                          <div class="sing_commentbox">
-                            <p><i class="fa fa-calendar"></i>19 Nov 2014</p>
-                            <a href="#"><i class="fa fa-comments"></i>20 Comments</a>
-                          </div>
-                          <p class="post-summary">Duis erat purus, tincidunt vel ullamcorper ut, consequat tempus nibh. Proin condimentum risus ligula, dignissim mollis tortor hendrerit vel. Aliquam...</p>
-                        </li>                   
-                      </ul>
-                      <!-- start category3 bottom post -->
-                      <div class="catg3_bottompost wow fadeInDown">
-                        <ul class="catg3_snav">
-                          <li>
-                            <div class="media">
-                              <a class="media-left" href="single_page.html">
-                                <img src="http://lorempixel.com/70/70/" alt="img">
-                              </a>
-                              <div class="media-body">
-                                <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>
-                                 <div class="sing_commentbox">
-                                  <p><i class="fa fa-calendar"></i>19 Nov 2014</p>
-                                  <a href="#"><i class="fa fa-comments"></i>20 Comments</a>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                           <li>
-                            <div class="media">
-                              <a class="media-left" href="single_page.html">
-                                <img src="http://lorempixel.com/70/70/" alt="img">
-                              </a>
-                              <div class="media-body">
-                                <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>
-                                 <div class="sing_commentbox">
-                                  <p><i class="fa fa-calendar"></i>19 Nov 2014</p>
-                                  <a href="#"><i class="fa fa-comments"></i>20 Comments</a>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                            <li>
-                            <div class="media">
-                              <a class="media-left" href="single_page.html">
-                                <img src="http://lorempixel.com/70/70/" alt="img">
-                              </a>
-                              <div class="media-body">
-                                <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>
-                                 <div class="sing_commentbox">
-                                  <p><i class="fa fa-calendar"></i>19 Nov 2014</p>
-                                  <a href="#"><i class="fa fa-comments"></i>20 Comments</a>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                            <li>
-                            <div class="media">
-                              <a class="media-left" href="single_page.html">
-                                <img src="http://lorempixel.com/70/70/" alt="img">
-                              </a>
-                              <div class="media-body">
-                                <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>
-                                 <div class="sing_commentbox">
-                                  <p><i class="fa fa-calendar"></i>19 Nov 2014</p>
-                                  <a href="#"><i class="fa fa-comments"></i>20 Comments</a>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>  
-                </div><!-- End category three --> 
-                <div class="category_four wow fadeInDown">
-                  <!-- start category Four -->
-                  <div class="single_category">
-                    <div class="category_title">
-                      <a href="#">Category 4</a>
-                    </div>
-                    <div class="single_category_inner">
-                      <ul class="catg_nav catg_nav3">
-                        <li>
-                          <div class="catgimg_container">
-                            <a class="catg1_img" href="single_page.html">
-                              <img src="http://lorempixel.com/292/150/" alt="img">
-                              </a>
-                          </div>
-                          <a class="catg_title" href="single_page.html"> Curabitur ac dictum nisl eu hendrerit ante</a>
-                          <div class="sing_commentbox">
-                            <p><i class="fa fa-calendar"></i>19 Nov 2014</p>
-                            <a href="#"><i class="fa fa-comments"></i>20 Comments</a>
-                          </div>
-                           <p class="post-summary">Duis erat purus, tincidunt vel ullamcorper ut, consequat tempus nibh. Proin condimentum risus ligula, dignissim mollis tortor hendrerit vel. Aliquam...</p>
-                        </li>                 
-                      </ul>
-
-                      <!-- start category4 bottom post -->
-                      <div class="catg3_bottompost wow fadeInDown">
-                        <ul class="catg3_snav">
-                          <li>
-                            <div class="media">
-                              <a class="media-left" href="single_page.html">
-                                <img src="http://lorempixel.com/70/70/" alt="img">
-                              </a>
-                              <div class="media-body">
-                                <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>
-                                 <div class="sing_commentbox">
-                                  <p><i class="fa fa-calendar"></i>19 Nov 2014</p>
-                                  <a href="#"><i class="fa fa-comments"></i>20 Comments</a>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                           <li>
-                            <div class="media">
-                              <a class="media-left" href="#">
-                                <img src="http://lorempixel.com/70/70/" alt="img">
-                              </a>
-                              <div class="media-body">
-                                <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>
-                                 <div class="sing_commentbox">
-                                  <p><i class="fa fa-calendar"></i>19 Nov 2014</p>
-                                  <a href="#"><i class="fa fa-comments"></i>20 Comments</a>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                            <li>
-                            <div class="media">
-                              <a class="media-left" href="#">
-                                <img src="http://lorempixel.com/70/70/" alt="img">
-                              </a>
-                              <div class="media-body">
-                                <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>
-                                 <div class="sing_commentbox">
-                                  <p><i class="fa fa-calendar"></i>19 Nov 2014</p>
-                                  <a href="#"><i class="fa fa-comments"></i>20 Comments</a>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                            <li>
-                            <div class="media">
-                              <a class="media-left" href="#">
-                                <img src="http://lorempixel.com/70/70/" alt="img">
-                              </a>
-                              <div class="media-body">
-                                <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>
-                                 <div class="sing_commentbox">
-                                  <p><i class="fa fa-calendar"></i>19 Nov 2014</p>
-                                  <a href="#"><i class="fa fa-comments"></i>20 Comments</a>
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div> 
-                </div><!-- End category Four --> 
               </div>
-              <!-- start category Five -->
-              <div class="single_category wow fadeInDown">
-                <div class="category_title">
-                  <a href="#">Category 5</a>
-                </div>
-                <div class="single_category_inner">
-                 <ul class="catg3_snav catg5_nav">
-                    <li>
-                      <div class="media">
-                        <a href="#" class="media-left">
-                          <img alt="img" src="http://lorempixel.com/70/70/">
-                        </a>
-                        <div class="media-body">
-                          <a href="#" class="catg_title"> Aliquam malesuada diam eget turpis varius</a>
-                           <div class="sing_commentbox">
-                            <p><i class="fa fa-calendar"></i>19 Nov 2014</p>
-                            <a href="#"><i class="fa fa-comments"></i>20 Comments</a>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                     <li>
-                      <div class="media">
-                        <a href="#" class="media-left">
-                          <img alt="img" src="http://lorempixel.com/70/70/">
-                        </a>
-                        <div class="media-body">
-                          <a href="#" class="catg_title"> Aliquam malesuada diam eget turpis varius</a>
-                           <div class="sing_commentbox">
-                            <p><i class="fa fa-calendar"></i>19 Nov 2014</p>
-                            <a href="#"><i class="fa fa-comments"></i>20 Comments</a>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="media">
-                        <a href="#" class="media-left">
-                          <img alt="img" src="http://lorempixel.com/70/70/">
-                        </a>
-                        <div class="media-body">
-                          <a href="#" class="catg_title"> Aliquam malesuada diam eget turpis varius</a>
-                           <div class="sing_commentbox">
-                            <p><i class="fa fa-calendar"></i>19 Nov 2014</p>
-                            <a href="#"><i class="fa fa-comments"></i>20 Comments</a>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="media">
-                        <a href="#" class="media-left">
-                          <img alt="img" src="http://lorempixel.com/70/70/">
-                        </a>
-                        <div class="media-body">
-                          <a href="#" class="catg_title"> Aliquam malesuada diam eget turpis varius</a>
-                           <div class="sing_commentbox">
-                            <p><i class="fa fa-calendar"></i>19 Nov 2014</p>
-                            <a href="#"><i class="fa fa-comments"></i>20 Comments</a>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="media">
-                        <a href="#" class="media-left">
-                          <img alt="img" src="http://lorempixel.com/70/70/">
-                        </a>
-                        <div class="media-body">
-                          <a href="#" class="catg_title"> Aliquam malesuada diam eget turpis varius</a>
-                           <div class="sing_commentbox">
-                            <p><i class="fa fa-calendar"></i>19 Nov 2014</p>
-                            <a href="#"><i class="fa fa-comments"></i>20 Comments</a>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="media">
-                        <a href="#" class="media-left">
-                          <img alt="img" src="http://lorempixel.com/70/70/">
-                        </a>
-                        <div class="media-body">
-                          <a href="#" class="catg_title"> Aliquam malesuada diam eget turpis varius</a>
-                           <div class="sing_commentbox">
-                            <p><i class="fa fa-calendar"></i>19 Nov 2014</p>
-                            <a href="#"><i class="fa fa-comments"></i>20 Comments</a>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div> <!-- End category Five --> 
+            </div> <!-- End content top latest slider -->
+            <!--Feature slide-->
+            <div class="col-lg-6 col-md-6 col-sm6">
+              <div class="content_top_right">
+                <ul class="featured_nav wow fadeInDown">
+                  <li>
+                    <img src="https://i.guim.co.uk/img/media/2fefe3bd73c77089374a59658b59b7fccfa0b250/0_211_3500_2100/master/3500.jpg?w=620&q=55&auto=format&usm=12&fit=max&s=52e85bb79aeb2269e153ef174514e213" alt="img">
+                    <div class="title_caption">
+                      <a href="single.html">
+                       Manchester United’s José Mourinho wants to buy Southampton’s José Fonte
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="https://i.guim.co.uk/img/media/976fcd95e033f6f8b13683fdc39c2c2f60a23c45/506_42_3218_1931/master/3218.jpg?w=620&q=55&auto=format&usm=12&fit=max&s=7e1850f38535e13d3bba02d64d24aedb" alt="img">
+                    <div class="title_caption">
+                      <a href="single.html">
+                        Arsenal prepare to face Jamie Vardy, the striker who turned them down
+                      </a>
+                    </div>
+                  </li>
+                   <li>
+                    <img src="https://i.guim.co.uk/img/media/c69204700bfa3f771b05d947fc087bed707e8789/0_171_3500_2100/master/3500.jpg?w=620&q=55&auto=format&usm=12&fit=max&s=f7579fabff5f7e33ebe029e8d516ecc6" alt="img">
+                    <div class="title_caption">
+                      <a href="single.html">
+                        Crystal Palace sign Christian Benteke on four-year deal from Liverpool
+                      </a>
+                    </div>
+                  </li>
+                   <li>
+                    <img src="https://i.guim.co.uk/img/media/6dfe5cf69a4a77e07ce3f4c82973104a69af80a9/0_0_5568_3342/master/5568.jpg?w=620&q=55&auto=format&usm=12&fit=max&s=7bfa63e0fbb373dac5145bda8a7b8a7f" alt="img">
+                    <div class="title_caption">
+                      <a href="single.html">
+                        Antonio Conte’s transfer frustrations grow as deadline looms for Chelsea
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- End left middlebar content -->
-
-        <!-- start left rightbar content -->
-        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-          <div class="row">
-            <div class="right_bar">
-              <!-- start Popular Post -->
-              <div class="single_leftbar wow fadeInDown">
-                <h2><span>Popular Post</span></h2>
-                <div class="singleleft_inner">
-                  <ul class="catg3_snav ppost_nav wow fadeInDown">
-                    <li>
-                      <div class="media">
-                        <a href="single_page.html" class="media-left">
-                          <img alt="img" src="http://lorempixel.com/70/70/">
-                        </a>
-                        <div class="media-body">
-                          <a href="single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius</a>                        
-                        </div>
-                      </div>
-                    </li>
-                     <li>
-                      <div class="media">
-                        <a href="single_page.html" class="media-left">
-                          <img alt="img" src="http://lorempixel.com/70/70/">
-                        </a>
-                        <div class="media-body">
-                          <a href="#" class="catg_title"> Aliquam malesuada diam eget turpis varius</a>                                
-                        </div>
-                      </div>
-                    </li>
+        </div><!-- End main content top -->
+        <!-- start main content Middle -->
+        <div class="content_middle">
+          <!-- End main content middle -->
+          <!-- start main content bottom -->
+          <div class="content_bottom">
+            <div class="col-lg-8 col-md-8">
+            <!-- start content bottom left -->
+              <div class="content_bottom_left">
+                <!-- start business category -->
+                <div class="single_category wow fadeInDown">
+                  <h2>                  
+                    <span class="bold_line"><span></span></span>
+                    <span class="solid_line"></span>
+                    <a class="title_text" href="category-archive.html">Business</a>
+                  </h2>
+                  <div class="business_category_left wow fadeInDown">
+                    <ul class="fashion_catgnav">
                       <li>
-                      <div class="media">
-                        <a href="single_page.html" class="media-left">
-                          <img alt="img" src="http://lorempixel.com/70/70/">
-                        </a>
-                        <div class="media-body">
-                          <a href="#" class="catg_title"> Aliquam malesuada diam eget turpis varius</a>                               
+                        <div class="catgimg2_container">
+                          <a href="single.html"><img alt="img" src="img/devhill/390x240x1.jpg"></a>
                         </div>
-                      </div>
-                    </li>
-                      <li>
-                      <div class="media">
-                        <a href="#" class="media-left">
-                          <img alt="img" src="http://lorempixel.com/70/70/">
-                        </a>
-                        <div class="media-body">
-                          <a href="#" class="catg_title"> Aliquam malesuada diam eget turpis varius</a>                         
+                        <h2 class="catg_titile"><a href="single.html">Aenean mollis metus sit amet ligula adipiscing</a></h2>
+                        <div class="comments_box">
+                          <span class="meta_date">14/12/2013</span>
+                          <span class="meta_comment"><a href="#">No Comments</a></span>
+                          <span class="meta_more"><a  href="#">Read More...</a></span>
                         </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="media">
-                        <a href="#" class="media-left">
-                          <img alt="img" src="http://lorempixel.com/70/70/">
-                        </a>
-                        <div class="media-body">
-                          <a href="#" class="catg_title"> Aliquam malesuada diam eget turpis varius</a>                        
-                        </div>
-                      </div>
-                    </li>
-                     <li>
-                      <div class="media">
-                        <a href="#" class="media-left">
-                          <img alt="img" src="http://lorempixel.com/70/70/">
-                        </a>
-                        <div class="media-body">
-                          <a href="#" class="catg_title"> Aliquam malesuada diam eget turpis varius</a>                                
-                        </div>
-                      </div>
-                    </li>
-                      <li>
-                      <div class="media">
-                        <a href="#" class="media-left">
-                          <img alt="img" src="http://lorempixel.com/70/70/">
-                        </a>
-                        <div class="media-body">
-                          <a href="#" class="catg_title"> Aliquam malesuada diam eget turpis varius</a>                               
-                        </div>
-                      </div>
-                    </li>
-                      <li>
-                      <div class="media">
-                        <a href="#" class="media-left">
-                          <img alt="img" src="http://lorempixel.com/70/70/">
-                        </a>
-                        <div class="media-body">
-                          <a href="#" class="catg_title"> Aliquam malesuada diam eget turpis varius</a>                         
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="media">
-                        <a href="#" class="media-left">
-                          <img alt="img" src="http://lorempixel.com/70/70/">
-                        </a>
-                        <div class="media-body">
-                          <a href="#" class="catg_title"> Aliquam malesuada diam eget turpis varius</a>
-                          
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="media">
-                        <a href="#" class="media-left">
-                          <img alt="img" src="http://lorempixel.com/70/70/">
-                        </a>
-                        <div class="media-body">
-                          <a href="#" class="catg_title"> Aliquam malesuada diam eget turpis varius</a>                                
-                        </div>
-                      </div>
-                    </li>                     
-                  </ul>
-                </div>
-              </div>
-               <!-- End Popular Post --> 
-
-               <!-- start right bar add -->
-              <div class="single_leftbar wow fadeInDown">
-                <h2><span>Side Ad</span></h2>
-                <div class="singleleft_inner">
-                 <a href="#"><img alt="img" src="http://lorempixel.com/262/218/"></a>
-                </div>
-              </div>
-               <!-- End right bar add --> 
-
-               <!-- start Tab -->
-              <div class="single_leftbar wow fadeInDown"> 
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs custom-tabs" role="tablist">
-                  <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Most Popular</a></li>
-                  <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Most Reader</a></li>
-                  <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Recent Comment</a></li>
-                </ul>             
-                <div class="tab-content">
-                  <div role="tabpanel" class="tab-pane fade in active" id="home">
-                    <ul class="catg3_snav ppost_nav wow fadeInDown">
-                    <li>
-                      <div class="media">
-                        <a class="media-left" href="#">
-                          <img src="http://lorempixel.com/70/70/" alt="img">
-                        </a>
-                        <div class="media-body">
-                          <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                        
-                        </div>
-                      </div>
-                    </li>
-                     <li>
-                      <div class="media">
-                        <a class="media-left" href="#">
-                          <img src="http://lorempixel.com/70/70/" alt="img">
-                        </a>
-                        <div class="media-body">
-                          <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                                
-                        </div>
-                      </div>
-                    </li>
-                      <li>
-                      <div class="media">
-                        <a class="media-left" href="#">
-                          <img src="http://lorempixel.com/70/70/" alt="img">
-                        </a>
-                        <div class="media-body">
-                          <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                               
-                        </div>
-                      </div>
-                    </li>
-                      <li>
-                      <div class="media">
-                        <a class="media-left" href="#">
-                          <img src="http://lorempixel.com/70/70/" alt="img">
-                        </a>
-                        <div class="media-body">
-                          <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                         
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="media">
-                        <a class="media-left" href="#">
-                          <img src="http://lorempixel.com/70/70/" alt="img">
-                        </a>
-                        <div class="media-body">
-                          <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                        
-                        </div>
-                      </div>
-                    </li>
-                     <li>
-                      <div class="media">
-                        <a class="media-left" href="#">
-                          <img src="http://lorempixel.com/70/70/" alt="img">
-                        </a>
-                        <div class="media-body">
-                          <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                                
-                        </div>
-                      </div>
-                    </li>
-                      <li>
-                      <div class="media">
-                        <a class="media-left" href="#">
-                          <img src="http://lorempixel.com/70/70/" alt="img">
-                        </a>
-                        <div class="media-body">
-                          <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                               
-                        </div>
-                      </div>
-                    </li>                                      
-                  </ul>
-                  </div>
-                  <div role="tabpanel" class="tab-pane fade" id="profile">
-                     <ul class="catg3_snav ppost_nav wow fadeInDown">
-                    <li>
-                      <div class="media">
-                        <a class="media-left" href="#">
-                          <img src="http://lorempixel.com/70/70/" alt="img">
-                        </a>
-                        <div class="media-body">
-                          <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                        
-                        </div>
-                      </div>
-                    </li>
-                     <li>
-                      <div class="media">
-                        <a class="media-left" href="#">
-                          <img src="http://lorempixel.com/70/70/" alt="img">
-                        </a>
-                        <div class="media-body">
-                          <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                                
-                        </div>
-                      </div>
-                    </li>
-                      <li>
-                      <div class="media">
-                        <a class="media-left" href="#">
-                          <img src="http://lorempixel.com/70/70/" alt="img">
-                        </a>
-                        <div class="media-body">
-                          <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                               
-                        </div>
-                      </div>
-                    </li>
-                      <li>
-                      <div class="media">
-                        <a class="media-left" href="#">
-                          <img src="http://lorempixel.com/70/70/" alt="img">
-                        </a>
-                        <div class="media-body">
-                          <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                         
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="media">
-                        <a class="media-left" href="#">
-                          <img src="http://lorempixel.com/70/70/" alt="img">
-                        </a>
-                        <div class="media-body">
-                          <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                        
-                        </div>
-                      </div>
-                    </li>                                                   
-                  </ul>
-                  </div>
-                  <div role="tabpanel" class="tab-pane fade" id="messages">
-                    <ul class="catg3_snav ppost_nav wow fadeInDown">
-                      <li>
-                        <div class="media">
-                          <a class="media-left" href="#">
-                            <img src="http://lorempixel.com/70/70/" alt="img">
-                          </a>
-                          <div class="media-body">
-                            <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                        
-                          </div>
-                        </div>
+                        <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla...</p>
                       </li>
-                       <li>
-                        <div class="media">
-                          <a class="media-left" href="#">
-                            <img src="http://lorempixel.com/70/70/" alt="img">
-                          </a>
-                          <div class="media-body">
-                            <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                                
-                          </div>
-                        </div>
-                      </li>
-                        <li>
-                        <div class="media">
-                          <a class="media-left" href="#">
-                            <img src="http://lorempixel.com/70/70/" alt="img">
-                          </a>
-                          <div class="media-body">
-                            <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                               
-                          </div>
-                        </div>
-                      </li>
-                        <li>
-                        <div class="media">
-                          <a class="media-left" href="#">
-                            <img src="http://lorempixel.com/70/70/" alt="img">
-                          </a>
-                          <div class="media-body">
-                            <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                         
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="media">
-                          <a class="media-left" href="#">
-                            <img src="http://lorempixel.com/70/70/" alt="img">
-                          </a>
-                          <div class="media-body">
-                            <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                        
-                          </div>
-                        </div>
-                      </li>
-                       <li>
-                        <div class="media">
-                          <a class="media-left" href="#">
-                            <img src="http://lorempixel.com/70/70/" alt="img">
-                          </a>
-                          <div class="media-body">
-                            <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                                
-                          </div>
-                        </div>
-                      </li>
-                        <li>
-                        <div class="media">
-                          <a class="media-left" href="#">
-                            <img src="http://lorempixel.com/70/70/" alt="img">
-                          </a>
-                          <div class="media-body">
-                            <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                               
-                          </div>
-                        </div>
-                      </li>                                      
                     </ul>
-                  </div>                  
+                  </div>  
+                  <div class="business_category_right wow fadeInDown">
+                    <ul class="small_catg">
+                      <li>
+                        <div class="media wow fadeInDown">
+                          <a class="media-left" href="single.html">
+                            <img src="img/devhill/112x112.jpg" alt="img">
+                          </a>
+                          <div class="media-body">
+                            <h4 class="media-heading"><a href="single.html">Duis condimentum nunc pretium lobortis </a></h4> 
+                            <div class="comments_box">
+                              <span class="meta_date">14/12/2013</span>
+                              <span class="meta_comment"><a href="#">No Comments</a></span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="media wow fadeInDown">
+                          <a class="media-left" href="#">
+                            <img src="img/devhill/112x112.jpg" alt="img">
+                          </a>
+                          <div class="media-body">
+                            <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4> 
+                            <div class="comments_box">
+                              <span class="meta_date">14/12/2013</span>
+                              <span class="meta_comment"><a href="#">No Comments</a></span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="media wow fadeInDown">
+                          <a class="media-left" href="#">
+                            <img src="img/devhill/112x112.jpg" alt="img">
+                          </a>
+                          <div class="media-body">
+                            <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4> 
+                            <div class="comments_box">
+                              <span class="meta_date">14/12/2013</span>
+                              <span class="meta_comment"><a href="#">No Comments</a></span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>   
                 </div>
-              </div>
-              <!-- End Tab --> 
+                <!-- End business category -->
 
-              <!-- start Blog Archive -->
-              <div class="single_leftbar wow fadeInDown">
-                <h2><span>Blog Archive</span></h2>
-                <div class="singleleft_inner">
-                 <div class="blog_archive">
+                 <!--start games & fashion category -->
+                <div class="games_fashion_area">
+                <!-- start games category -->
+                  <!--<div class="games_category">
+                    <div class="single_category">
+                      <h2>                  
+                        <span class="bold_line"><span></span></span>
+                        <span class="solid_line"></span>
+                        <a class="title_text" href="category-archive.html">Games</a>
+                      </h2>
+                      <ul class="fashion_catgnav wow fadeInDown">
+                        <li>
+                          <div class="catgimg2_container">
+                            <a href="single.html"><img alt="img" src="img/devhill/390x240x1.jpg"></a>
+                          </div>
+                          <h2 class="catg_titile"><a href="#">Aenean mollis metus sit amet ligula adipiscing</a></h2>
+                          <div class="comments_box">
+                            <span class="meta_date">14/12/2013</span>
+                            <span class="meta_comment"><a href="#">No Comments</a></span>
+                            <span class="meta_more"><a  href="#">Read More...</a></span>
+                          </div>
+                          <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla...</p>
+                        </li>
+                      </ul>
+                      <ul class="small_catg wow fadeInDown">
+                        <li>
+                          <div class="media">
+                            <a class="media-left" href="#">
+                              <img src="img/devhill/112x112.jpg" alt="img">
+                            </a>
+                            <div class="media-body">
+                              <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4> 
+                              <div class="comments_box">
+                                <span class="meta_date">14/12/2013</span>
+                                <span class="meta_comment"><a href="#">No Comments</a></span>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="media wow fadeInDown">
+                            <a class="media-left" href="#">
+                              <img src="img/devhill/112x112.jpg" alt="img">
+                            </a>
+                            <div class="media-body">
+                              <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4> 
+                              <div class="comments_box">
+                                <span class="meta_date">14/12/2013</span>
+                                <span class="meta_comment"><a href="#">No Comments</a></span>
+                              </div>
+                            </div>
+                          </div>
+                        </li>                  
+                      </ul>
+                    </div>
+                  </div>-->
+                  <!-- End games category -->
+                  <!-- start fashion category -->
+                   <!--<div class="fashion_category">
+                    <div class="single_category">
+                      <div class="single_category wow fadeInDown">
+                        <h2>                  
+                          <span class="bold_line"><span></span></span>
+                          <span class="solid_line"></span>
+                          <a class="title_text" href="category-archive.html">Fashion</a>
+                        </h2>
+                        <ul class="fashion_catgnav wow fadeInDown">
+                          <li>
+                            <div class="catgimg2_container">
+                              <a href="#"><img alt="img" src="img/devhill/390x240x1.jpg"></a>
+                            </div>
+                            <h2 class="catg_titile"><a href="#">Aenean mollis metus sit amet ligula adipiscing</a></h2>
+                            <div class="comments_box">
+                              <span class="meta_date">14/12/2013</span>
+                              <span class="meta_comment"><a href="#">No Comments</a></span>
+                              <span class="meta_more"><a  href="#">Read More...</a></span>
+                            </div>
+                            <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla...</p>
+                          </li>
+                        </ul>
+                        <ul class="small_catg wow fadeInDown">
+                          <li>
+                            <div class="media wow fadeInDown">
+                              <a class="media-left" href="#">
+                                <img src="img/devhill/112x112.jpg" alt="img">
+                              </a>
+                              <div class="media-body">
+                                <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4> 
+                                <div class="comments_box">
+                                  <span class="meta_date">14/12/2013</span>
+                                  <span class="meta_comment"><a href="#">No Comments</a></span>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="media wow fadeInDown">
+                              <a class="media-left" href="#">
+                                <img src="img/devhill/112x112.jpg" alt="img">
+                              </a>
+                              <div class="media-body">
+                                <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4> 
+                                <div class="comments_box">
+                                  <span class="meta_date">14/12/2013</span>
+                                  <span class="meta_comment"><a href="#">No Comments</a></span>
+                                </div>
+                              </div>
+                            </div>
+                          </li>                  
+                        </ul>
+                      </div>
+                    </div>
+                  </div>-->
+                  <!-- End fashion category -->
+                </div> End games & fashion category  
+                <!-- start technology category area -->
+                <div class="technology_catrarea">
+                  <div class="single_category">
+                    <h2>                  
+                      <span class="bold_line"><span></span></span>
+                      <span class="solid_line"></span>
+                      <a class="title_text" href="#">Technology</a>
+                    </h2>
+                    <div class="business_category_left">
+                      <ul class="fashion_catgnav wow fadeInDown">
+                        <li>
+                          <div class="catgimg2_container">
+                            <a href="#"><img alt="img" src="img/devhill/390x240x1.jpg"></a>
+                          </div>
+                          <h2 class="catg_titile"><a href="#">Aenean mollis metus sit amet ligula adipiscing</a></h2>
+                          <div class="comments_box">
+                            <span class="meta_date">14/12/2013</span>
+                            <span class="meta_comment"><a href="#">No Comments</a></span>
+                            <span class="meta_more"><a  href="#">Read More...</a></span>
+                          </div>
+                          <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla...</p>
+                        </li>
+                      </ul>
+                    </div>  
+                    <div class="business_category_right">
+                      <ul class="small_catg wow fadeInDown">
+                        <li>
+                          <div class="media wow fadeInDown">
+                            <a class="media-left" href="#">
+                              <img src="img/devhill/112x112.jpg" alt="img">
+                            </a>
+                            <div class="media-body">
+                              <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4> 
+                              <div class="comments_box">
+                                <span class="meta_date">14/12/2013</span>
+                                <span class="meta_comment"><a href="#">No Comments</a></span>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="media wow fadeInDown">
+                            <a class="media-left" href="#">
+                              <img src="img/devhill/112x112.jpg" alt="img">
+                            </a>
+                            <div class="media-body">
+                              <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4> 
+                              <div class="comments_box">
+                                <span class="meta_date">14/12/2013</span>
+                                <span class="meta_comment"><a href="#">No Comments</a></span>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="media wow fadeInDown">
+                            <a class="media-left" href="#">
+                              <img src="img/devhill/112x112.jpg" alt="img">
+                            </a>
+                            <div class="media-body">
+                              <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4> 
+                              <div class="comments_box">
+                                <span class="meta_date">14/12/2013</span>
+                                <span class="meta_comment"><a href="#">No Comments</a></span>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>   
+                  </div>
+                </div><!-- End technology category area -->
+                <div class="technology_catrarea">
+                  <div class="single_category">
+                    <h2>                  
+                      <span class="bold_line"><span></span></span>
+                      <span class="solid_line"></span>
+                      <a class="title_text" href="#">Technology</a>
+                    </h2>
+                    <div class="business_category_left">
+                      <ul class="fashion_catgnav wow fadeInDown">
+                        <li>
+                          <div class="catgimg2_container">
+                            <a href="#"><img alt="img" src="img/devhill/390x240x1.jpg"></a>
+                          </div>
+                          <h2 class="catg_titile"><a href="#">Aenean mollis metus sit amet ligula adipiscing</a></h2>
+                          <div class="comments_box">
+                            <span class="meta_date">14/12/2013</span>
+                            <span class="meta_comment"><a href="#">No Comments</a></span>
+                            <span class="meta_more"><a  href="#">Read More...</a></span>
+                          </div>
+                          <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla...</p>
+                        </li>
+                      </ul>
+                    </div>  
+                    <div class="business_category_right">
+                      <ul class="small_catg wow fadeInDown">
+                        <li>
+                          <div class="media wow fadeInDown">
+                            <a class="media-left" href="#">
+                              <img src="img/devhill/112x112.jpg" alt="img">
+                            </a>
+                            <div class="media-body">
+                              <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4> 
+                              <div class="comments_box">
+                                <span class="meta_date">14/12/2013</span>
+                                <span class="meta_comment"><a href="#">No Comments</a></span>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="media wow fadeInDown">
+                            <a class="media-left" href="#">
+                              <img src="img/devhill/112x112.jpg" alt="img">
+                            </a>
+                            <div class="media-body">
+                              <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4> 
+                              <div class="comments_box">
+                                <span class="meta_date">14/12/2013</span>
+                                <span class="meta_comment"><a href="#">No Comments</a></span>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="media wow fadeInDown">
+                            <a class="media-left" href="#">
+                              <img src="img/devhill/112x112.jpg" alt="img">
+                            </a>
+                            <div class="media-body">
+                              <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4> 
+                              <div class="comments_box">
+                                <span class="meta_date">14/12/2013</span>
+                                <span class="meta_comment"><a href="#">No Comments</a></span>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>   
+                  </div>
+                </div><!-- End technology category area -->
+              </div><!--End content_bottom_left-->                 
+            </div>
+            <!-- start content bottom right -->
+            <div class="col-lg-4 col-md-4">
+              <div class="content_bottom_right">
+                <!-- start single bottom rightbar -->
+                <div class="single_bottom_rightbar">
+                  <h2>Recent Post</h2>
+                  <ul class="small_catg popular_catg wow fadeInDown">
+                    <li>
+                      <div class="media wow fadeInDown">
+                        <a href="#" class="media-left">
+                          <img alt="img" src="img/devhill/112x112.jpg">
+                        </a>
+                        <div class="media-body">
+                          <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4> 
+                          <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="media wow fadeInDown">
+                        <a href="#" class="media-left">
+                          <img alt="img" src="img/devhill/112x112.jpg">
+                        </a>
+                        <div class="media-body">
+                          <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4> 
+                         <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="media wow fadeInDown">
+                        <a href="#" class="media-left">
+                          <img alt="img" src="img/devhill/112x112.jpg">
+                        </a>
+                        <div class="media-body">
+                          <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4> 
+                          <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra </p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div> <!-- End single bottom rightbar -->
+                <!-- start single bottom rightbar -->
+                <div class="single_bottom_rightbar">
+                  <ul role="tablist" class="nav nav-tabs custom-tabs">
+                    <li class="active" role="presentation"><a data-toggle="tab" role="tab" aria-controls="home" href="#mostPopular">Most Popular</a></li>
+                    <li role="presentation"><a data-toggle="tab" role="tab" aria-controls="messages" href="#recentComent">Recent Comment</a></li>
+                  </ul>
+                  <div class="tab-content">
+                  <div id="mostPopular" class="tab-pane fade in active" role="tabpanel">
+                    <ul class="small_catg popular_catg wow fadeInDown">
+                      <li>
+                        <div class="media wow fadeInDown">
+                          <a class="media-left" href="#">
+                            <img src="img/devhill/112x112.jpg" alt="img">
+                          </a>
+                          <div class="media-body">
+                            <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4> 
+                            <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="media wow fadeInDown">
+                          <a class="media-left" href="#">
+                            <img src="img/devhill/112x112.jpg" alt="img">
+                          </a>
+                          <div class="media-body">
+                            <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4> 
+                           <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="media wow fadeInDown">
+                          <a class="media-left" href="#">
+                            <img src="img/devhill/112x112.jpg" alt="img">
+                          </a>
+                          <div class="media-body">
+                            <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4> 
+                            <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div id="recentComent" class="tab-pane fade" role="tabpanel">
+                     <ul class="small_catg popular_catg">
+                      <li>
+                        <div class="media wow fadeInDown">
+                          <a class="media-left" href="#">
+                            <img src="img/devhill/112x112.jpg" alt="img">
+                          </a>
+                          <div class="media-body">
+                            <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4> 
+                            <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="media wow fadeInDown">
+                          <a class="media-left" href="#">
+                            <img src="img/devhill/112x112.jpg" alt="img">
+                          </a>
+                          <div class="media-body">
+                            <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4> 
+                           <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="media wow fadeInDown">
+                          <a class="media-left" href="#">
+                            <img src="img/devhill/112x112.jpg" alt="img">
+                          </a>
+                          <div class="media-body">
+                            <h4 class="media-heading"><a href="#">Duis condimentum nunc pretium lobortis </a></h4> 
+                            <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>                                   
+                </div>
+              </div> <!-- End single bottom rightbar -->
+               <div class="single_bottom_rightbar">
+                <h2>Blog Archive</h2>
+                <div class="blog_archive wow fadeInDown">
                    <form>
                      <select>
                        <option value="">Blog Archive</option>
@@ -1001,156 +745,101 @@
                      </select>
                    </form>
                  </div>
-                </div>
               </div>
-              <!-- End Blog Archive --> 
-
-              <!-- start Labels -->
-              <div class="single_leftbar wow fadeInDown">
-                <h2><span>Labels</span></h2>
-                <div class="singleleft_inner">
-                 <ul class="label_nav">
-                   <li><a href="#">Arts</a></li>
-                   <li><a href="#">Cinema</a></li>
-                   <li><a href="#">Comedy</a></li>
-                   <li><a href="#">Sports</a></li>
-                   <li><a href="#">Tourism</a></li>
-                   <li><a href="#">Videos</a></li>
-                   <li><a href="#">Nature</a></li>
-                 </ul>
-                </div>
-              </div>
-              <!-- End Labels --> 
-
-               <!-- start Links -->
-               <div class="single_leftbar wow fadeInDown">
-                <h2><span>Links</span></h2>
-                <div class="singleleft_inner">
-                <ul class="link_nav">
-                  <li><a href="#">Blog Home</a></li>
+              <div class="single_bottom_rightbar wow fadeInDown">
+                <h2>Popular Lnks</h2>
+                <ul>
                   <li><a href="#">Blog</a></li>
+                  <li><a href="#">Blog Home</a></li>
                   <li><a href="#">Error Page</a></li>
-                  <li><a href="#">Wpfreeware</a></li>
-                  <li><a href="#">Facebook Account</a></li>                  
+                  <li><a href="#">Social link</a></li>
+                  <li><a href="#">Login</a></li>                  
                 </ul>
-                </div>
               </div>
-              <!-- End Links --> 
+            </div>
+          </div>
+          <!-- start content bottom right -->
+        </div><!-- end main content bottom -->        
+      </section><!-- End site main content -->
+    </div> <!-- /.container -->
+    <footer id="footer">
+      <div class="footer_top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4">
+              <div class="single_footer_top wow fadeInLeft">
+                <h2>Flicker Images</h2>
+                <ul class="flicker_nav">
+                  <li>
+                      <a href="#"><img src="img/devhill/75x75.jpg" alt="img"></a>
+                  </li>                 
+                  <li>
+                      <a href="#"><img src="img/devhill/75x75.jpg" alt="img"></a>
+                  </li>
+                   <li>
+                      <a href="#"><img src="img/devhill/75x75.jpg" alt="img"></a>
+                  </li>                 
+                  <li>
+                      <a href="#"><img src="img/devhill/75x75.jpg" alt="img"></a>
+                  </li>
+                   <li>
+                      <a href="#"><img src="img/devhill/75x75.jpg" alt="img"></a>
+                  </li>                 
+                  <li>
+                     <a href="#"><img src="img/devhill/75x75.jpg" alt="img"></a>
+                  </li>
+                   <li>
+                      <a href="#"><img src="img/devhill/75x75.jpg" alt="img"></a>
+                  </li>                 
+                  <li>
+                     <a href="#"><img src="img/devhill/75x75.jpg" alt="img"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+              <div class="single_footer_top wow fadeInDown">
+                <h2>Labels</h2>
+                <ul class="labels_nav">
+                  <li><a href="#">Gallery</a></li>
+                  <li><a href="#">Business</a></li>
+                  <li><a href="#">Games</a></li>
+                  <li><a href="#">Fashion</a></li>
+                  <li><a href="#">Sports</a></li>
+                  <li><a href="#">Technology</a></li>
+                  <li><a href="#">Slider</a></li>
+                  <li><a href="#">Life & Style</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+              <div class="single_footer_top wow fadeInRight">
+                <h2>About Us</h2>
+                <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed nec laoreet orci, eget ullamcorper quam. Phasellus lorem neque, </p>
+              </div>
             </div>
           </div>
         </div>
-        <!-- End left rightbar content -->
       </div>
-    </section>
-    <!-- ==================End content body section=============== -->
-    <footer id="footer">     
-        <div class="footer_top">
-          <div class="col-lg-3 col-md-3 col-sm-6">
-            <div class="single_footer_top wow fadeInLeft">
-              <h2>Follow By Email</h2>
-              <div class="subscribe_area">
-                <p>"Subscribe here to get our newsletter, it is safe just Put your Email and click subscribe"</p>
-                <form>
-                  <div class="subscribe_mail">
-                    <input class="form-control" type="email" placeholder="Email Address">
-                    <i class="fa fa-envelope"></i>
-                  </div>
-                  <input class="submit_btn" type="submit" value="Submit">
-                </form>
+      <div class="footer_bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="footer_bottom_left">
+                <p>Copyright © 2014 <a href="index.html">Sora Red</a></p>
+              </div>   
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="footer_bottom_right">
+                <p>Designed BY <a href="http://wpfreeware.com/">Wpfreeware</a></p>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-3 col-sm-6">
-            <div class="single_footer_top wow fadeInLeft">
-              <h2>Popular Post</h2>
-              <ul class="catg3_snav ppost_nav">
-                <li>
-                  <div class="media">
-                    <a class="media-left" href="single_page.html">
-                      <img src="http://lorempixel.com/70/70/" alt="img">
-                    </a>
-                    <div class="media-body">
-                      <a class="catg_title" href="single_page.html"> Aliquam malesuada diam eget turpis varius</a>                    
-                    </div>
-                  </div>
-                </li>
-                 <li>
-                  <div class="media">
-                    <a class="media-left" href="single_page.html">
-                      <img src="http://lorempixel.com/70/70/" alt="img">
-                    </a>
-                    <div class="media-body">
-                      <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                                
-                    </div>
-                  </div>
-                </li>
-                  <li>
-                  <div class="media">
-                    <a class="media-left" href="#">
-                      <img src="http://lorempixel.com/70/70/" alt="img">
-                    </a>
-                    <div class="media-body">
-                      <a class="catg_title" href="#"> Aliquam malesuada diam eget turpis varius</a>                               
-                    </div>
-                  </div>
-                </li>                                       
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-3 col-sm-6">
-            <div class="single_footer_top wow fadeInRight">
-              <h2>Labels</h2>
-              <ul class="footer_labels">
-                <li><a href="#">Comedy</a></li>
-                <li><a href="#">Arts</a></li>
-                <li><a href="#">Cinema</a></li>
-                <li><a href="#">Nature</a></li>
-                <li><a href="#">Sports</a></li>
-                <li><a href="#">Tourism</a></li>
-                <li><a href="#">Videos</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-3 col-sm-6">
-            <div class="single_footer_top wow fadeInRight">
-              <h2>Contact Form</h2>
-              <form class="contact_form">
-                <label>Name</label>
-                <input class="form-control" type="text">
-                <label>Email*</label>
-                <input class="form-control" type="email">
-                <label>Message*</label>
-                <textarea class="form-control" cols="30" rows="10"></textarea>
-                <input class="send_btn" type="submit" value="Send">
-              </form>
-            </div>
-          </div>
-        </div>  
-        <div class="footer_bottom">
-          <div class="footer_bottom_left">
-            <p>Designed by <a href="http://www.wpfreeware.com/" rel="nofollow">Wpfreeware</a></p>
-          </div>
+        </div>
+      </div>
+    </footer>
 
-          <!-- =========================
-          //////////////This Theme Design and Developed //////////////////////
-          //////////// by www.wpfreeware.com======================-->
-
-          <div class="footer_bottom_right">
-            <ul>
-              <li><a class="tootlip" data-toggle="tooltip" data-placement="top" title="Twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a class="tootlip" data-toggle="tooltip" data-placement="top" title="Facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a class="tootlip" data-toggle="tooltip" data-placement="top" title="Googel+" href="#"><i class="fa fa-google-plus"></i></a></li>
-              <li><a class="tootlip" data-toggle="tooltip" data-placement="top" title="Youtube" href="#"><i class="fa fa-youtube"></i></a></li>
-              <li><a class="tootlip" data-toggle="tooltip" data-placement="top" title="Rss" href="#"><i class="fa fa-rss"></i></a></li>
-            </ul>
-          </div>
-        </div>  
-      </footer>
-    </div><!-- /.box_wrapper -->
-  </div><!-- /.container -->
-
-
-  <!-- jQuery Library -->
+  <!-- jQuery google CDN Library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
   <!-- For content animatin  -->
   <script src="js/wow.min.js"></script>
@@ -1158,8 +847,7 @@
   <script src="js/bootstrap.min.js"></script> 
   <!-- slick slider js file -->
   <script src="js/slick.min.js"></script> 
-  <!-- news ticker jquery file -->
-  <script src="js/jquery.li-scroller.1.0.js"></script></script>
+  
     <!-- custom js file include -->
   <script src="js/custom.js"></script> 
 
@@ -1167,6 +855,35 @@
         //////////////This Theme Design and Developed //////////////////////
         //////////// by www.wpfreeware.com======================-->
     
+   <script>
+    $("#inputQuery").hide();
+    $("#searchButton").css('cursor','pointer');
+    $("#searchButton").click(function(){
+      if($("#inputQuery:visible").length==0)
+        $("#inputQuery").fadeIn();
+      else
+        $("#inputQuery").fadeOut();        
+    });  
+    $("#header #mainContent").click(function() {
+    //Hide the menus if visible
+       $("#inputQuery").fadeIn();
+    });
+    // $("#profileBtn").click(function(){
+    //   console.log("CLick");
+    //   $("#dropdownMenu1").dropdown('toggle');
+    // });
+    $('.avatar-image').hover(function() {
+      console.log($(this).parent());
       
+      $(this).parent().find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
+    }, function() {
+      $(this).parent().find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
+    });
+  // $('nav').affix({
+  //       offset: {
+  //         top: $('header').height()
+  //       }
+  // });
+   </script>   
   </body>
 </html>

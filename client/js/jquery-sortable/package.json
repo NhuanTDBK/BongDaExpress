@@ -1,0 +1,51 @@
+{
+  "name": "jquery-sortable",
+  "version": "0.9.13",
+  "description": "jquery plugin for sortable, nestable lists",
+  "main": "./source/js/jquery-sortable.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnny/jquery-sortable.git"
+  },
+  "keywords": [
+    "sortable",
+    "sort",
+    "sorting",
+    "drag",
+    "dragging"
+  ],
+  "author": "",
+  "license": "BSD-3",
+  "bugs": {
+    "url": "https://github.com/johnny/jquery-sortable/issues"
+  },
+  "homepage": "https://github.com/johnny/jquery-sortable",
+  "dependencies": {
+    "jquery": "^2.1.2"
+  },
+  "gitHead": "35f4ffaf5802ebf61202279cbab5037edf2af82a",
+  "_id": "jquery-sortable@0.9.13",
+  "_shasum": "1cbfb655013a0747370571f06e22f524a00ffba2",
+  "_from": "jquery-sortable@>=0.9.12 <0.10.0",
+  "_npmVersion": "2.10.1",
+  "_nodeVersion": "0.12.4",
+  "_npmUser": {
+    "name": "cedrsystems",
+    "email": "zschuster@sjcoe.net"
+  },
+  "dist": {
+    "shasum": "1cbfb655013a0747370571f06e22f524a00ffba2",
+    "tarball": "https://registry.npmjs.org/jquery-sortable/-/jquery-sortable-0.9.13.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "cedrsystems",
+      "email": "zschuster@sjcoe.net"
+    }
+  ],
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/jquery-sortable/-/jquery-sortable-0.9.13.tgz"
+}
